@@ -1,0 +1,48 @@
+{
+  "name": "iol-front-end-utils",
+  "version": "1.0.0-alpha",
+  "description": "IOL Inc. / Systems Dev / Front-End utility functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-IOL/iol-front-end-utils.git"
+  },
+  "keywords": [],
+  "author": "amiellion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-IOL/iol-front-end-utils/issues"
+  },
+  "homepage": "https://github.com/Team-IOL/iol-front-end-utils#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dayjs": "^1.11.9",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/lodash": "^4.14.198",
+    "jest": "^29.6.4",
+    "ts-jest": "^29.1.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
