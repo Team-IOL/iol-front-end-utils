@@ -1,6 +1,6 @@
 {
   "name": "iol-front-end-utils",
-  "version": "1.1.3-beta",
+  "version": "1.1.4-beta",
   "description": "IOL Inc. / Systems Dev / Front-End utility functions",
   "main": "dist/bundle.js",
   "types": "dist/iol-front-end-utils.d.ts",
@@ -18,12 +18,11 @@
     "url": "https://github.com/Team-IOL/iol-front-end-utils/issues"
   },
   "homepage": "https://github.com/Team-IOL/iol-front-end-utils#readme",
-  "dependencies": {
+  "peerDependencies": {
     "axios": "^1.5.0",
     "dayjs": "^1.11.9",
     "jwt-decode": "^3.1.2",
-    "lodash": "^4.17.21",
-    "typescript": "^5.2.2"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
@@ -37,7 +36,8 @@
     "rollup-plugin-dts": "^6.0.2",
     "rollup-plugin-typescript2": "^0.35.0",
     "ts-jest": "^29.1.1",
-    "tslib": "^2.6.2"
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
   },
   "jest": {
     "transform": {
