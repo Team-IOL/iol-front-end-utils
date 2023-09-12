@@ -20,7 +20,7 @@ const jsConfig = {
 const dtsConfig = {
   input: 'src/index.ts',
   output: {
-    file: 'dist/my-library.d.ts',
+    file: 'dist/iol-front-end-utils.d.ts',
     format: 'es'  // This format works well with .d.ts files
   },
   plugins: [
