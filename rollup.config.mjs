@@ -1,8 +1,9 @@
 import typescript from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import { dts } from "rollup-plugin-dts";
 
-export default {
+const jsConfig = {
   input: 'src/index.ts',
   output: {
     file: 'dist/bundle.js',
@@ -14,3 +15,19 @@ export default {
     commonjs()
   ]
 };
+
+// Configuration for TypeScript declaration file
+const dtsConfig = {
+  input: 'src/index.ts',
+  output: {
+    file: 'dist/my-library.d.ts',
+    format: 'es'  // This format works well with .d.ts files
+  },
+  plugins: [
+    typescript(),
+    dts(),
+  ]
+};
+
+
+export default [jsConfig, dtsConfig]

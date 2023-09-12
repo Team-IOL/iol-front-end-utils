@@ -1,5 +1,3 @@
-/** @format */
-
 type ArrayOfObjects = Array<{ id: number; [key: string]: any }>;
 
 export function createIndexMap(array: ArrayOfObjects, idKey: string) {

@@ -1,6 +1,5 @@
 'use strict';
 
-/** @format */
 function createIndexMap(array, idKey) {
     const indexMap = {};
     for (let i = 0; i < array.length; i++) {
