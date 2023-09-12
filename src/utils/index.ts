@@ -13,7 +13,7 @@ import { IS_FILE_LARGER_100MB, IS_FILE_LARGER_3MB, IS_FILE_LARGER_5MB } from "./
 import formatCurrencyPHP from "./numbers/format_currency";
 
 //security
-import { decodeIdToken } from "./security/token";
+import { hs_decodeIdToken } from "./security/token";
 import { PASSWORD_HAS_NUMBER, PASSWORD_HAS_MIXED_LETTERS, PASSWORD_HAS_SPECIAL_CHARACTERS, getPasswordStrengthColor, strengthIndicator } from "./security/password_strength";
 
 //strings
@@ -41,7 +41,7 @@ export {
   formatCurrencyPHP,
 
   //security
-  decodeIdToken,
+  hs_decodeIdToken,
   PASSWORD_HAS_NUMBER,
   PASSWORD_HAS_MIXED_LETTERS,
   PASSWORD_HAS_SPECIAL_CHARACTERS,

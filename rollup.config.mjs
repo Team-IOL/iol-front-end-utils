@@ -1,4 +1,4 @@
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { dts } from "rollup-plugin-dts";
@@ -24,7 +24,6 @@ const dtsConfig = {
     format: 'es'  // This format works well with .d.ts files
   },
   plugins: [
-    typescript(),
     dts(),
   ]
 };
