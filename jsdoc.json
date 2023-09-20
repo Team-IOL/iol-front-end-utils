@@ -1,0 +1,25 @@
+{
+    "source": {
+        "include": [
+            "src/**/*.js",
+            "src/**/*.ts"
+        ],
+        "exclude": [
+            "node_modules/"
+        ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "template": "node_modules/better-docs",
+        "destination": "docs/",
+        "encoding": "utf8",
+        "private": true,
+        "recurse": true
+    }
+}

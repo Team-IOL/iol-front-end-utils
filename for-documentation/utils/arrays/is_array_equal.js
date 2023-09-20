@@ -1,9 +1,7 @@
 /** @format */
-
 import isEmpty from "lodash/isEmpty";
 import isEqual from "lodash/isEqual";
 import xorWith from "lodash/xorWith";
-
 /**
  * Checks if two arrays are equal by comparing their elements.
  *
@@ -19,4 +17,4 @@ import xorWith from "lodash/xorWith";
  *
  * @note This function uses `xorWith` and `isEqual` for comparison and `isEmpty` to check the result. Ensure these utilities are imported and available in the scope.
  */
-export const IS_ARRAY_EQUAL = (arr1:any[], arr2: any[]): boolean => isEmpty(xorWith(arr1, arr2, isEqual));
+export const IS_ARRAY_EQUAL = (arr1, arr2) => isEmpty(xorWith(arr1, arr2, isEqual));

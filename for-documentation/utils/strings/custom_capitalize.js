@@ -1,7 +1,5 @@
 /** @format */
-
 import capitalize from "lodash/capitalize";
-
 /**
  * Capitalizes the first letter of a string or each substring separated by a specified character.
  *
@@ -16,9 +14,9 @@ import capitalize from "lodash/capitalize";
  *
  * @note This function assumes the `capitalize` function is available in the scope to capitalize individual strings.
  */
-const customCapitalize = ({ string, character }: { string: string; character: string }): string => {
-  if (string.includes(character)) return string.split(character).map(capitalize).join(character);
-  return capitalize(string);
+const customCapitalize = ({ string, character }) => {
+    if (string.includes(character))
+        return string.split(character).map(capitalize).join(character);
+    return capitalize(string);
 };
-
 export default customCapitalize;
