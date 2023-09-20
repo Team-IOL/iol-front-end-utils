@@ -1,11 +1,12 @@
 {
   "name": "iol-front-end-utils",
-  "version": "1.1.5-beta",
+  "version": "1.2.5-beta",
   "description": "IOL Inc. / Systems Dev / Front-End utility functions",
   "main": "dist/bundle.js",
   "types": "dist/iol-front-end-utils.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",

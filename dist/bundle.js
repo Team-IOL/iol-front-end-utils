@@ -17269,6 +17269,16 @@ const IS_ARRAY_EQUAL = (arr1, arr2) => lodashExports.isEmpty(lodashExports.xorWi
  */
 const IS_VALUE_ARRAY = (array) => Array.isArray(array);
 
+/** @format */
+/**
+ * Checks if a value is a an array and if it contains an element.
+ *
+ * @function
+ * @param {any[]} array - value to check if array or not.
+ * @returns {boolean} Returns `true` if the value provided is an array and if it contains an element
+ */
+const IS_VALID_ARRAY = (array) => IS_VALUE_ARRAY(array) && (array === null || array === void 0 ? void 0 : array.length) > 0;
+
 const FILE_SIZE_100MB = 100 * 1024 * 1024; // 100MB in bytes
 const FILE_SIZE_5MB = 5 * 1024 * 1024; // 100MB in bytes
 const FILE_SIZE_3MB = 3 * 1024 * 1024; // 100MB in bytes
@@ -17304,6 +17314,14 @@ const IS_FILE_LARGER_5MB = (fileSize) => {
 const IS_FILE_LARGER_3MB = (fileSize) => {
     return fileSize > FILE_SIZE_3MB;
 };
+
+/**
+ * Calculates the height of a 16:10 rectangle from the width.
+
+ * @param width The width of the rectangle.
+ * @returns The height of the rectangle.
+ */
+const calcHeight1610 = (width) => (width * 10) / 16;
 
 /** @format */
 /**
@@ -17473,10 +17491,12 @@ exports.IS_ARRAY_EQUAL = IS_ARRAY_EQUAL;
 exports.IS_FILE_LARGER_100MB = IS_FILE_LARGER_100MB;
 exports.IS_FILE_LARGER_3MB = IS_FILE_LARGER_3MB;
 exports.IS_FILE_LARGER_5MB = IS_FILE_LARGER_5MB;
+exports.IS_VALID_ARRAY = IS_VALID_ARRAY;
 exports.IS_VALUE_ARRAY = IS_VALUE_ARRAY;
 exports.PASSWORD_HAS_MIXED_LETTERS = PASSWORD_HAS_MIXED_LETTERS;
 exports.PASSWORD_HAS_NUMBER = PASSWORD_HAS_NUMBER;
 exports.PASSWORD_HAS_SPECIAL_CHARACTERS = PASSWORD_HAS_SPECIAL_CHARACTERS;
+exports.calcHeight1610 = calcHeight1610;
 exports.convertToBase64 = convertToBase64;
 exports.createIndexMap = createIndexMap;
 exports.customCapitalize = customCapitalize;

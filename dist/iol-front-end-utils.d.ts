@@ -57,6 +57,16 @@ declare const IS_ARRAY_EQUAL: (arr1: any[], arr2: any[]) => boolean;
  */
 declare const IS_VALUE_ARRAY: (array: any) => boolean;
 
+/** @format */
+/**
+ * Checks if a value is a an array and if it contains an element.
+ *
+ * @function
+ * @param {any[]} array - value to check if array or not.
+ * @returns {boolean} Returns `true` if the value provided is an array and if it contains an element
+ */
+declare const IS_VALID_ARRAY: (array: any) => boolean;
+
 declare const FILE_SIZE_100MB: number;
 declare const FILE_SIZE_5MB: number;
 declare const FILE_SIZE_3MB: number;
@@ -86,6 +96,14 @@ declare const IS_FILE_LARGER_5MB: (fileSize: number) => boolean;
  * @returns {boolean} Returns `true` if the value is greater than 3MB.
  */
 declare const IS_FILE_LARGER_3MB: (fileSize: number) => boolean;
+
+/**
+ * Calculates the height of a 16:10 rectangle from the width.
+
+ * @param width The width of the rectangle.
+ * @returns The height of the rectangle.
+ */
+declare const calcHeight1610: (width: number) => number;
 
 /** @format */
 /**
@@ -217,4 +235,4 @@ declare const customCapitalize: ({ string, character }: {
  */
 declare const convertToBase64: (text: string) => string;
 
-export { FILE_SIZE_100MB, FILE_SIZE_3MB, FILE_SIZE_5MB, IS_ARRAY_EQUAL, IS_FILE_LARGER_100MB, IS_FILE_LARGER_3MB, IS_FILE_LARGER_5MB, IS_VALUE_ARRAY, PASSWORD_HAS_MIXED_LETTERS, PASSWORD_HAS_NUMBER, PASSWORD_HAS_SPECIAL_CHARACTERS, convertToBase64, createIndexMap, customCapitalize, findIndexById, formatCurrencyPHP, getWordLength, hs_decodeIdToken, limitWords, stringRemoveSpaceLowercase };
+export { FILE_SIZE_100MB, FILE_SIZE_3MB, FILE_SIZE_5MB, IS_ARRAY_EQUAL, IS_FILE_LARGER_100MB, IS_FILE_LARGER_3MB, IS_FILE_LARGER_5MB, IS_VALID_ARRAY, IS_VALUE_ARRAY, PASSWORD_HAS_MIXED_LETTERS, PASSWORD_HAS_NUMBER, PASSWORD_HAS_SPECIAL_CHARACTERS, calcHeight1610, convertToBase64, createIndexMap, customCapitalize, findIndexById, formatCurrencyPHP, getWordLength, hs_decodeIdToken, limitWords, stringRemoveSpaceLowercase };

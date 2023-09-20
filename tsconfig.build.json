@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "ESNext", /* Specify what module code is generated. */
-    // "types": ["./dist/iol-front-end-utils"],
+    "types": ["./dist/iol-front-end-utils"],
     "moduleResolution": "node",
     "strict": true, /* Enable all strict type-checking options. */
     "noEmit": true,
@@ -15,5 +15,7 @@
   ],
   "exclude": [
     "node_modules",
+    "**/*.test.ts",
+    "tests"
   ],
 }
